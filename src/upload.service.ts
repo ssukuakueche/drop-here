@@ -12,7 +12,7 @@ export async function getFiles ()
     for (const file of result)
     {
         const stat = await fs.stat(path.join(PATH_UPLOADS, file));
-        if (!stat.isDirectory() && file !== ".gitkeep")
+        if (!stat.isDirectory() && file !== ".gitignore")
         {
             files.push({
                 name: file,
