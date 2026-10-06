@@ -1,7 +1,5 @@
 # Drop Here
 
-## Description
-
 A simple project for uploading files to a server and sharing them between computers on the same network.
 
 ## Build
