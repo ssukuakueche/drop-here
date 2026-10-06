@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.app
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #303030;
+    color: #fafafa;
+    padding: 20px 25px;
+}
+
+.main {
+    max-width: 100%;
+    width: 600px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.drop-area {
+    background-color: #202020;
+    padding: 20px;
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #101010;
+    outline: 4px solid #202020;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.item-to-upload {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #202020;
+
+}
+
+.item-to-upload button {
+    background-color: rgb(0, 128, 255);
+    color: white;
+}
+
+.item-to-upload button[disabled]
+{
+    animation: pulse 1.2s infinite;
+}
+
+.files {
+   margin-top: 30px;
+}
+
+.files .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.files .bar {
+    height: 2px;
+    width: 100%;
+    background-color: #505050;
+    margin-top: 10px;
+}
+
+.file-items {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.file-item {
+    font-size: 14px;
+    border-bottom: 1px solid #505050;
+    padding: 10px;
+    color: #eee;
+    text-decoration: none;
+}
+
+.file-item:hover{
+    text-decoration: underline;
+}
+
+.file-item .file-item-bytes {
+    color: #999;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
